@@ -14,5 +14,19 @@
   "license": "MIT",
   "engines": {
     "node": ">= 10"
-  }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simon-Bin/simple-svg-parser.git"
+  },
+  "keywords": [
+    "svg",
+    "parser",
+    "svg-parser"
+  ],
+  "description": "a simple parser for svg"
 }

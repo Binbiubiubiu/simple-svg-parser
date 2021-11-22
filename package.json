@@ -1,16 +1,19 @@
 {
   "name": "@napi-rs/simple-svg-parser",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "napi": {
     "name": "simple-svg-parser",
     "triples": {}
   },
+  "main": "index.js",
+  "typings": "index.d.ts",
   "license": "MIT",
   "dependencies": {
     "@node-rs/helper": "^1.2.1"
   },
   "devDependencies": {
-    "@napi-rs/cli": "^1.2.1"
+    "@napi-rs/cli": "^1.2.1",
+    "ava": "^3.15.0"
   },
   "engines": {
     "node": ">= 10"
@@ -20,6 +23,27 @@
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
-    "version": "napi version"
-  }
+    "version": "napi version",
+    "test": "ava"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simon-Bin/simple-svg-parser.git"
+  },
+  "keywords": [
+    "svg",
+    "parser",
+    "svg-parser"
+  ],
+  "description": "a simple parser for svg",
+  "author": "Simon-Bin",
+  "bugs": {
+    "url": "https://github.com/Simon-Bin/simple-svg-parser/issues"
+  },
+  "homepage": "https://github.com/Simon-Bin/simple-svg-parser#readme"
+  
 }
